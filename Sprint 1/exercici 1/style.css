@@ -1,8 +1,10 @@
-/*mobile first*/
+/*mobile first exercici 3*/
 *{
     box-sizing: border-box;
     margin: 0;
+    max-width: 1200px;  
 }
+
 p{ font-size: 1em;
 font-weight: bolder;}
 
@@ -13,8 +15,6 @@ body{
 }
 
 .container{
-    
-    max-width: 1200px;
     border: 15px solid black;
     margin: 1.3em 1.3em 0em 1.3em;
     padding: 0em;
@@ -87,6 +87,42 @@ footer .container{
     padding: 0.5em;
     text-align: center;
     background-color: #E06523;
+}
+
+/*exercici 2 versió tauleta*/
+
+@media (min-width: 600px){
+
+    #headingOne{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 1em ;
+        padding-bottom: 0.7em ;
+    }
+
+    #sectionBlock{
+        
+        display: flex;
+    }
+}
+
+/*exercici 1 versió desktop*/
+
+@media (min-width: 768px){
+    
+    section .container{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        border-color: black;
+        padding: 0%;
+        
+    }
+
+    #firstSection{
+        border-bottom: none;
+        border-right: 5px solid black;
+    }
 }
 
 
