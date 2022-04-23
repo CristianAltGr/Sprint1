@@ -21,12 +21,6 @@ body{
     
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-
-}
-
 header p{
     text-align: center;
     padding: 5px 5px;
@@ -34,8 +28,7 @@ header p{
 }
 
 #headingOne{
-    display: flex;
-    flex-direction: column;
+    
     background-color: #269452;
     border-bottom: 5px solid black;
     align-items: center;  
@@ -54,11 +47,7 @@ header p{
 }
 
 section .container{
-
-    display: flex;
-    flex-direction: column;
-    border: 15px solid yellow;
-    
+    border: 15px solid yellow;   
 }
 
 section p{
