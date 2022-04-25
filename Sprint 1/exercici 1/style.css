@@ -1,118 +1,124 @@
-/*mobile first exercici 3*/
+/*exercici 1 ben  fet*/
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 10px;
+    padding: 10px;
     max-width: 1200px;  
+   
 }
 
-p{ font-size: 1em;
-font-weight: bolder;}
-
-body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-
+.father{
+    display: flex;
+    flex-flow: column nowrap;
+    
 }
 
 .container{
-    border: 15px solid black;
-    margin: 1.3em 1.3em 0em 1.3em;
-    padding: 0em;
+    background-color: black; 
+    min-width: 200px;
+}
+
+.sectioncont{
+    background-color: black;
+    min-width: 200px;
+}
+
+header{
+    background-color: black;
+
+}
+
+#menu{
+    background-color: #75E0CC;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+#logo{
+    background-color: #DB48E0;
+    flex: 1 1 auto;
+}
+header nav{
+    background-color: #DB48E0;
+    flex: 5 1 auto;
+}
+#socialMedia{
+    background-color: #DB48E0;
+    flex: 1 1 auto;
+}
+
+#textHero{
+    background-color: #947D2F;
+}
+
+header h1{
+    background-color:#F26DF7;
+}
+
+section{
+    display: flex;
+    flex-flow: row nowrap ;
     
 }
 
-header p{
-    text-align: center;
-    padding: 5px 5px;
-
+#letter{ 
+    background-color: #E0C35E;  
+    flex: 2 1 auto; 
+    display: flex;
+    flex-flow: row wrap;
 }
 
-#headingOne{
+section article{
+    background-color: #C468ED; 
+    flex: 1 1 40%;
+}
+
+section nav{
+    background-color: #F26DF7;
+    flex: 1 1 100%
+}
+
+aside{
+    background-color:#75E0CC;
+    flex: 1 1 auto;
     
-    background-color: #269452;
-    border-bottom: 5px solid black;
-    align-items: center;  
 }
 
-#headingTwo{
-    background-color: #2FE075;
-    text-align: center;
-    padding: 1em;
+
+.pub{
+    background-color: #F26DF7;
+ 
 }
 
-#secondHead{
-    display: inline;
-    text-align: justify;
-    padding: 1em;
+
+#foot{
+    background-color: #947D2F;
 }
 
-section .container{
-    border: 15px solid yellow;   
-}
 
-section p{
-    text-align: justify;
-    padding: 0.8em;
-}
+/*exercici 2*/
 
-#firstSection{
-    background-color: #095094;
-    border-bottom: 5px solid yellow;
-}
+@media all and (max-width : 800px) {
+    
 
-#thirdText{
-    color: red;
-}
-
-#secondSection{
-    background-color: #197EE0 ;
-}
-
-#changeColor{
-    color:#E06523
-}
-
-footer .container{
-    padding: 0.5em;
-    text-align: center;
-    background-color: #E06523;
-}
-
-/*exercici 2 versió tauleta*/
-
-@media (min-width: 600px){
-
-    #headingOne{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-top: 1em ;
-        padding-bottom: 0.7em ;
+    section{
+        flex-direction: column;
     }
 
-    #sectionBlock{
+    .sectioncont{
+        background-color: yellow;
+    }
+
+
+}
+
+/*exercici 3*/
+
+@media (max-width: 400px) {
+    
+
+    #menu{
+       flex-flow: column wrap;
         
-        display: flex;
     }
 }
-
-/*exercici 1 versió desktop*/
-
-@media (min-width: 768px){
-    
-    section .container{
-        display: grid;
-        grid-template-columns: 70% 30%;
-        border-color: black;
-        padding: 0%;
-        
-    }
-
-    #firstSection{
-        border-bottom: none;
-        border-right: 5px solid black;
-    }
-}
-
-
-
